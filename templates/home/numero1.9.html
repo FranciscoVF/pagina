@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Numero 1.1 {% endblock title %}
+
+
+{% block page_content %}
+
+{% if request.user.is_authenticated %}
+
+  <h1>Bienvenido {{ request.user }}</h1>
+
+{% else %}
+
+  <h1>Login First</h1>
+
+{% endif %}
+
+{% endblock page_content %}
